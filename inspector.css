@@ -1,0 +1,190 @@
+/* CSS from observable */
+:root {
+  --syntax_normal: #1b1e23;
+  --syntax_comment: #a9b0bc;
+  --syntax_number: #20a5ba;
+  --syntax_keyword: #c30771;
+  --syntax_atom: #10a778;
+  --syntax_string: #008ec4;
+  --syntax_error: #ffbedc;
+  --syntax_unknown_variable: #838383;
+  --syntax_known_variable: #005f87;
+  --syntax_matchbracket: #20bbfc;
+  --syntax_key: #6636b4;
+  --mono_fonts: 82%/1.5 Menlo, Consolas, monospace;
+}
+.observablehq--collapsed,
+.observablehq--expanded,
+.observablehq--function,
+.observablehq--gray,
+.observablehq--import,
+.observablehq--string:after,
+.observablehq--string:before {
+  color: var(--syntax_normal);
+}
+.observablehq--collapsed,
+.observablehq--inspect a {
+  cursor: pointer;
+}
+.observablehq--field {
+  text-indent: -1em;
+  margin-left: 1em;
+}
+.observablehq--empty {
+  color: var(--syntax_comment);
+}
+.observablehq--blue,
+.observablehq--keyword {
+  color: #3182bd;
+}
+.observablehq--forbidden,
+.observablehq--pink {
+  color: #e377c2;
+}
+.observablehq--orange {
+  color: #e6550d;
+}
+.observablehq--boolean,
+.observablehq--null,
+.observablehq--undefined {
+  color: var(--syntax_atom);
+}
+.observablehq--bigint,
+.observablehq--date,
+.observablehq--green,
+.observablehq--number,
+.observablehq--regexp,
+.observablehq--symbol {
+  color: var(--syntax_number);
+}
+.observablehq--index,
+.observablehq--key {
+  color: var(--syntax_key);
+}
+.observablehq--prototype-key {
+  color: #aaa;
+}
+.observablehq--empty {
+  font-style: oblique;
+}
+.observablehq--purple,
+.observablehq--string {
+  color: var(--syntax_string);
+}
+.observablehq--error,
+.observablehq--red {
+  color: #e7040f;
+}
+.observablehq--inspect {
+  font: var(--mono_fonts);
+  overflow-x: auto;
+  display: block;
+  white-space: pre;
+}
+.observablehq--error .observablehq--inspect {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+
+/* added myself */
+
+* {
+    font-family:'Gotham Book', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Gotham Bold', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-block-end: 0em;
+}
+
+h1.date {
+  color: #b6b6b6;
+}
+
+p {
+  font-size: 12pt;
+  font-family: 'Gotham Light', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 160%;
+}
+
+.link {
+  text-decoration: underline;
+  color: inherit;
+  font-family: 'Gotham Light', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.link:hover {
+  font-family: 'Gotham Medium', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0px;
+}
+
+.observablehq--inspect {
+  display: none;
+}
+
+div.observablehq svg {
+  width: 80%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(12px 12px 20px rgba(0, 0, 0, 0.15));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+button {
+    padding: 10px 24px;
+    margin-bottom: 48px;
+    margin-left: 10%;
+    background-color: #f0f0f0;
+    border: solid 1px;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 930px) {
+  .title {
+    flex-direction: column;
+  }
+
+  h1.date {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.year-ticker {
+  fill: #b6b6b6;
+  font-size: 4em;
+  font-family: 'Gotham Bold', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

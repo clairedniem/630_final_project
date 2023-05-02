@@ -1,0 +1,14 @@
+{
+  "name": "da621730b2d3c293",
+  "main": "da621730b2d3c293@3216.js",
+  "version": "3216.0.0",
+  "homepage": "https://observablehq.com/d/da621730b2d3c293",
+  "author": {
+    "name": "clairesworkspace",
+    "url": "https://observablehq.com/@clairesworkspace"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

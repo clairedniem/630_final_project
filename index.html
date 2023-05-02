@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Most Popular Baby Names in NYC</title>
+    <link rel="stylesheet" type="text/css" href="./inspector.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        <h1>Most Popular Baby Names in NYC</h1>
+        <h1 class="date">2011 - 2019</h1>
+      </div>
+      <p>
+        The visualization below uses live data from the
+        <a
+          href="https://dev.socrata.com/foundry/data.cityofnewyork.us/g374-eanh/embed"
+          class="link"
+          >NYC OpenData</a
+        >
+        API. Data was collected through civil birth registration.
+      </p>
+    </div>
+    <script type="module">
+      import define from "./index.js";
+      import { Runtime, Library, Inspector } from "./runtime.js";
+
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.body));
+    </script>
+  </body>
+</html>
